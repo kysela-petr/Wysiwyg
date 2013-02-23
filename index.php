@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="css/prettify.css?<?php echo $nowHash; ?>">
         <link rel="stylesheet" href="css/main.css?<?php echo $nowHash; ?>">
         <link rel="stylesheet" href="css/textarea.css?<?php echo $nowHash; ?>">
+        <link rel="stylesheet" href="css/dropbox.css?<?php echo $nowHash; ?>">
         <script src="js/vendor/modernizr-2.6.2.min.js?<?php echo $nowHash; ?>"></script>
     </head>
     <body>
@@ -47,6 +48,7 @@
         <script src="js/plugins.js?<?php echo $nowHash; ?>"></script>
         <script src="js/bootstrap.min.js?<?php echo $nowHash; ?>"></script>
         <script src="js/bootstrap-wysihtml5.js?<?php echo $nowHash; ?>"></script>
+        <script src="js/jquery.filedrop.js?<?php echo $nowHash; ?>"></script>
         <script src="js/main.js?<?php echo $nowHash; ?>"></script>
     </body>
 </html>
