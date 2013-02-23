@@ -1,1 +1,3 @@
 
+$('.textarea').wysihtml5();
+

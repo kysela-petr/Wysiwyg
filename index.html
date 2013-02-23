@@ -14,7 +14,10 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="_plugins/bootstrap%20wysihtml5/lib/css/wysiwyg-color.css">
+        <link rel="stylesheet" href="_plugins/bootstrap%20wysihtml5/src/bootstrap-wysihtml5.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
     </head>
     <body>
         
@@ -37,6 +40,13 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+        <!--
+        wysihtml5 script
+        -->
+        <script src="_plugins/bootstrap%20wysihtml5/lib/js/wysihtml5-0.3.0.js"></script>
+        <script src="_plugins/bootstrap%20wysihtml5/src/bootstrap-wysihtml5.js"></script>
+                <script>
+        $('.textarea').wysihtml5();
+        </script>
     </body>
 </html>
