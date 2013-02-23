@@ -69,7 +69,9 @@
                   "<h3>" + locale.image.insert + "</h3>" +
                 "</div>" +
                 "<div class='modal-body'>" +
-                  "<input value='http://' class='bootstrap-wysihtml5-insert-image-url input-xlarge'>" +
+                "<div id='dropbox'>"+
+                  "<span class='message'>Drop images here to upload. <br /><i>(they will only be visible to you)</i></span>"+
+                "</div>"+
                 "</div>" +
                 "<div class='modal-footer'>" +
                   "<a href='#' class='btn' data-dismiss='modal'>" + locale.image.cancel + "</a>" +
@@ -77,7 +79,7 @@
                 "</div>" +
               "</div>" +
               "<a class='btn" + size + "' data-wysihtml5-command='insertImage' title='" + locale.image.insert + "' tabindex='-1'><i class='icon-picture'></i></a>" +
-            "</li>";
+            "</li><script src='js/script.js'></script>";
         },
 
         "html": function(locale, options) {
