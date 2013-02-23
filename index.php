@@ -1,3 +1,6 @@
+<?php
+    $nowHash = md5(date());
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -12,12 +15,14 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="_plugins/bootstrap%20wysihtml5/lib/css/wysiwyg-color.css">
-        <link rel="stylesheet" href="_plugins/bootstrap%20wysihtml5/src/bootstrap-wysihtml5.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-
+        <link rel="stylesheet" href="css/normalize.css?<?php echo $nowHash; ?>">
+        <link rel="stylesheet" href="css/bootstrap.min.css?<?php echo $nowHash; ?>">
+        <link rel="stylesheet" href="css/bootstrap-wysihtml5.css?<?php echo $nowHash; ?>">
+        <link rel="stylesheet" href="css/wysiwyg-color.css?<?php echo $nowHash; ?>">
+        <link rel="stylesheet" href="css/prettify.css?<?php echo $nowHash; ?>">
+        <link rel="stylesheet" href="css/main.css?<?php echo $nowHash; ?>">
+        <link rel="stylesheet" href="css/textarea.css?<?php echo $nowHash; ?>">
+        <script src="js/vendor/modernizr-2.6.2.min.js?<?php echo $nowHash; ?>"></script>
     </head>
     <body>
         
@@ -36,17 +41,12 @@
          JAVASCRIPT   
          ================================================= -->
 
+        <script src="js/wysihtml5-0.3.0.js?<?php echo $nowHash; ?>"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <!--
-        wysihtml5 script
-        -->
-        <script src="_plugins/bootstrap%20wysihtml5/lib/js/wysihtml5-0.3.0.js"></script>
-        <script src="_plugins/bootstrap%20wysihtml5/src/bootstrap-wysihtml5.js"></script>
-                <script>
-        $('.textarea').wysihtml5();
-        </script>
+        <script src="js/plugins.js?<?php echo $nowHash; ?>"></script>
+        <script src="js/bootstrap.min.js?<?php echo $nowHash; ?>"></script>
+        <script src="js/bootstrap-wysihtml5.js?<?php echo $nowHash; ?>"></script>
+        <script src="js/main.js?<?php echo $nowHash; ?>"></script>
     </body>
 </html>

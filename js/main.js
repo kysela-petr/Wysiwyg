@@ -1,3 +1,4 @@
-
-$('.textarea').wysihtml5();
+$(function() {
+	$('.wysiwyg').wysihtml5();
+});
 
