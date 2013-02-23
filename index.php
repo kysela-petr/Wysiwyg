@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="css/wysiwyg-color.css?<?php echo $nowHash; ?>">
         <link rel="stylesheet" href="css/prettify.css?<?php echo $nowHash; ?>">
         <link rel="stylesheet" href="css/main.css?<?php echo $nowHash; ?>">
+        <link rel="stylesheet" href="css/textarea.css?<?php echo $nowHash; ?>">
         <script src="js/vendor/modernizr-2.6.2.min.js?<?php echo $nowHash; ?>"></script>
     </head>
     <body>
