@@ -1,1 +1,3 @@
-
+$(function() {
+	$('.wysiwyg').wysihtml5();
+});
