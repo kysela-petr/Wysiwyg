@@ -1,9 +1,17 @@
-body {
+.wysiwyg-container {
 	margin: 0 auto;
 	width: 600px;
-}
-
+}	
 .wysiwyg {
 	width: 600px;
 	height: 300px;
+}
+
+
+.modal-body {
+    min-height: 388px;
+}
+.bootstrap-wysihtml5-insert-image-modal {
+	width: 780px;
+	margin-left: -390px;
 }

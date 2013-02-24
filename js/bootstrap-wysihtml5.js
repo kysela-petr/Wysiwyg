@@ -69,9 +69,26 @@
                   "<h3>" + locale.image.insert + "</h3>" +
                 "</div>" +
                 "<div class='modal-body'>" +
-                "<div id='dropbox'>"+
-                  "<span class='message'>"+locale.dropbox.drop2upload+"<br /><i>"+locale.dropbox.description+"</i></span>"+
-                "</div>"+
+                "<div class='tabbable'>" +
+                    "<ul class='nav nav-tabs'>" +
+                        "<li class='active'><a href='#tab1' data-toggle='tab'>vybrat obrázek z galerie</a></li>" +
+                        "<li><a href='#tab2' data-toggle='tab'>vybrat obrázek z počítače</a></li>" +
+                        "<li><a href='#tab3' data-toggle='tab'>vybrat obrázek z internetu</a></li>" +
+                    "</ul>" +
+                    "<div class='tab-content'>" +
+                        "<div class='tab-pane active' id='tab1'>" +
+                            "pictures" +
+                        "</div>" +
+                        "<div class='tab-pane' id='tab2'>" +
+                            "<div id='dropbox'>"+
+                              "<span class='message'>"+locale.dropbox.drop2upload+"<br /><i>"+locale.dropbox.description+"</i></span>"+
+                            "</div>"+
+                        "</div>" +
+                        "<div class='tab-pane' id='tab3'>" +
+                            "<input type='url' name='image-url'>"+
+                        "</div>" +
+                    "</div>" +
+                "</div>" +
                 "</div>" +
                 "<div class='modal-footer'>" +
                   "<a href='#' class='btn' data-dismiss='modal'>" + locale.image.cancel + "</a>" +
@@ -244,6 +261,9 @@
                 }
                 // #TODO - OPRAVIT URL OBRÁZKU
                 self.editor.composer.commands.exec("insertImage", insertImageModal.find('.bootstrap-wysihtml5-insert-image-url').attr('src'));
+                var $dropbox = $('#dropbox');
+                $dropbox.find('div').remove();
+                $dropbox.find('.message').removeAttr('style');
             };
 
             urlInput.keypress(function(e) {
@@ -260,6 +280,7 @@
             });
 
             insertImageModal.on('hide', function() {
+                    
                 self.editor.currentView.element.focus();
             });
 

@@ -28,14 +28,15 @@
     <body>
         
 
-        <h1>wysiwyg</h1>
-
-        <form>
-
-            <textarea class="wysiwyg"></textarea>
-
-        </form>
-
+        <div class="wysiwyg-container">
+            <h1>wysiwyg</h1>
+    
+                <form>
+    
+                    <textarea class="wysiwyg"></textarea>
+    
+            </form>
+        </div>
 
 
         <!--  
