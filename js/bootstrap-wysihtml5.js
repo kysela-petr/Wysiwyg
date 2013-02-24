@@ -543,7 +543,7 @@
                 blue: "Modrá",
                 orange: "Oranžová"
             },
-            filedrop: {
+            dropbox: {
                 drop2upload: "Přeneste obázek na tuto plochu.",
                 description: "(obrázek uvidíte jenom vy)"
             }
