@@ -242,7 +242,8 @@
                   self.editor.composer.selection.setBookmark(caretBookmark);
                   caretBookmark = null;
                 }
-                self.editor.composer.commands.exec("insertImage", url);
+                // #TODO - OPRAVIT URL OBRÁZKU
+                self.editor.composer.commands.exec("insertImage", insertImageModal.find('.bootstrap-wysihtml5-insert-image-url').attr('src'));
             };
 
             urlInput.keypress(function(e) {
@@ -268,6 +269,7 @@
                 if (!activeButton) {
                     self.editor.currentView.element.focus(false);
                     caretBookmark = self.editor.composer.selection.getBookmark();
+                    console.log(caretBookmark);
                     insertImageModal.appendTo('body').modal('show');
                     insertImageModal.on('click.dismiss.modal', '[data-dismiss="modal"]', function(e) {
                         e.stopPropagation();

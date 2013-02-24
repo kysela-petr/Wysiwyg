@@ -55,7 +55,7 @@ $(function(){
 	
 	var template = '<div class="preview">'+
 						'<span class="imageHolder">'+
-							'<img />'+
+							'<img class="bootstrap-wysihtml5-insert-image-url"/>'+
 							'<span class="uploaded"></span>'+
 						'</span>'+
 						'<div class="progressHolder">'+
