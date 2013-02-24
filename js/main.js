@@ -1,3 +1,4 @@
 $(function() {
 	$('.wysiwyg').wysihtml5();
 });
+

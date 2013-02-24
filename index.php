@@ -50,6 +50,5 @@
         <script src="js/bootstrap-wysihtml5.js?<?php echo $nowHash; ?>"></script>
         <script src="js/jquery.filedrop.js?<?php echo $nowHash; ?>"></script>
         <script src="js/main.js?<?php echo $nowHash; ?>"></script>
-
     </body>
 </html>

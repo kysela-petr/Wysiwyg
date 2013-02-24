@@ -448,7 +448,7 @@
             }
         },
         stylesheets: ["./css/wysiwyg-color.css"], // (path_to_project/lib/css/wysiwyg-color.css)
-        locale: "en"
+        locale: "cs"
     };
 
     if (typeof $.fn.wysihtml5.defaultOptionsCache === 'undefined') {
@@ -497,6 +497,49 @@
                 navy: "Navy",
                 blue: "Blue",
                 orange: "Orange"
+            }
+        },
+        cs: {
+            font_styles: {
+                normal: "Obyčejný text",
+                h1: "Nadpis 1",
+                h2: "Nadpis 2",
+                h3: "Nadpis 3"
+            },
+            emphasis: {
+                bold: "Tučně",
+                italic: "Kurzíva",
+                underline: "Podtržené"
+            },
+            lists: {
+                unordered: "Nečíslovaný seznam",
+                ordered: "Číslovaný seznam",
+                outdent: "Odsazení",
+                indent: "Předsazení"
+            },
+            link: {
+                insert: "Vložit odkaz",
+                cancel: "Zrušit"
+            },
+            image: {
+                insert: "Vložit obrázek",
+                cancel: "Zrušit"
+            },
+            html: {
+                edit: "Editovat HTML"
+            },
+            colours: {
+                black: "Černá",
+                silver: "Stříbrná",
+                gray: "Šedá",
+                maroon: "Tmavě červená",
+                red: "Červená",
+                purple: "Fialová",
+                green: "Zelená",
+                olive: "Olivová",
+                navy: "Námořnická modrá",
+                blue: "Modrá",
+                orange: "Oranžová"
             }
         }
     };
