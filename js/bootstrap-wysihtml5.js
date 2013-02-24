@@ -70,7 +70,7 @@
                 "</div>" +
                 "<div class='modal-body'>" +
                 "<div id='dropbox'>"+
-                  "<span class='message'>Drop images here to upload. <br /><i>(they will only be visible to you)</i></span>"+
+                  "<span class='message'>"+locale.dropbox.drop2upload+"<br /><i>"+locale.dropbox.description+"</i></span>"+
                 "</div>"+
                 "</div>" +
                 "<div class='modal-footer'>" +
@@ -495,6 +495,10 @@
                 navy: "Navy",
                 blue: "Blue",
                 orange: "Orange"
+            },
+            dropbox: {
+                drop2upload: "Drop images here to upload.",
+                description: "(they will only be visible to you)"
             }
         },
         cs: {
@@ -538,6 +542,10 @@
                 navy: "Námořnická modrá",
                 blue: "Modrá",
                 orange: "Oranžová"
+            },
+            filedrop: {
+                drop2upload: "Přeneste obázek na tuto plochu.",
+                description: "(obrázek uvidíte jenom vy)"
             }
         }
     };
